@@ -3,10 +3,10 @@ package sort
 func BubbleSort(elements []int) {
 	keepWorking := true
 
-	for keepWorking {
+	if keepWorking {
 		keepWorking = false
 
-		for i := 0; i < len(elements); i++ {
+		for i := 0; i < len(elements)-1; i++ {
 			if elements[i] < elements[i+1] {
 				elements[i], elements[i+1] = elements[i+1], elements[i]
 			}
